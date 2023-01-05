@@ -213,7 +213,7 @@ label {
 /* MOBILE */
 @media screen and (max-width: 680px) {
     h2  {
-        font-size: 70%;
+        font-size: 60%;
     }
 }
 
@@ -246,7 +246,6 @@ video {
 
 
 /* ROOMS */
-
 .rooms {
     background-color:#6AD4DB;
     display: flex;
@@ -262,13 +261,14 @@ video {
 .rooms img{
     height: 250px;
     width: 250px;
+    max-width: 200px;
     float: left;
     border: 3px solid #8F5228;
     margin-left: 15px;
     border-radius: 10px;
     margin-right: 15px;
-
 }
+
 .rooms h3{
     margin: 0;
     color:#8F5228
@@ -278,13 +278,13 @@ article{
    flex-direction: row;
    margin-bottom: 10px;
 }
+
 article p {
     color: #fff;
     margin-right: 15px;
     font-size: 1em;
     font-family: sans-serif;
-    margin-top: 50px;
-    
+    margin-top: 50px;    
 }
 
 /* CONTACT-PAGE */
