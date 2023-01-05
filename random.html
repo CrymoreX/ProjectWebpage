@@ -1,0 +1,62 @@
+   <!---->
+   <div class="wrapper">
+       
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>      
+       
+        <nav>
+            <ul>
+                <li><a href="rooms.html">rooms</a></li> <!-- Tar dig till kontaktsidan-->
+                <li><a href="contact-page.html">contact</a></li> <!-- Tar dig till kontaktsidan-->
+                <li><a class="btn" href="#">log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+
+
+    <div class="content">
+    <div class="text">
+        <p>Welcome to our dream hotel <span>Perfect Waves Hotel</span> and feel free to take book a room</p>
+        <a href="rooms.html" class="btn">book a room</a> <!-- Tar dig till rumbokningar-->
+    </div>
+    </div>
+       
+
+
+
+    <footer> <!--Botten på hemsidan-->
+        <i>Copyright 2022 by Aries Academy</i>
+    </footer>
+
+    JS stuff 
+    
+    function message() {
+        var Name = document.getElementById('name)');
+        var email = document.getElementById('email)');
+        var phonenumber = document.getElementById('phonenumber)');
+        const success = document.getElementById('success');
+        const danger = document.getElementById('danger');
+    
+        if(Name.value === '' || email.value === '' || phonenumber.value === ''){
+           danger.style.display = 'block';
+    }
+    
+    else {
+        setTimeout(() => {
+            mame.value = '';
+            email.value = '';
+            phonenumber.value = '';
+        },2000);
+        
+    
+        success.style.display = 'block';
+    }
+
+    text = "Your Message Successfully Sent!";
+}
+document.getElementById("success").innerHTML = text;
+
+})

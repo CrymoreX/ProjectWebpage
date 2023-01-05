@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <title>Contact</title>
+</head>
+<body>
+
+    <header>
+       
+        <a href="index.html" class="logo">Perfect Waves Hotel</a>
+
+
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="contact-page.html">Contact</a></li>
+    </ul>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+
+        <h1>Contact</h1>
+
+        <!--Här ska det vara kontaktuppgifter till hotellet-->
+      <div class="rooms">
+        <h2>
+            our main office:
+            <br>
+            Hulhudhoo, Addu City, Maldives   
+            <br>
+            <a class="link" href="https://www.google.com.my/maps/place/Maldiverna/@-0.5997859,73.218073,15.74z/data=!4m5!3m4!1s0x24b599bfaafb7bbd:0x414509e181956289!8m2!3d3.202778!4d73.22068">Google Link</a>
+            <br><br>
+            Phone number:
+            <br>
+            +601233231213
+            <br><br>
+            Email:
+            <br>
+            perfectwaveshotel@office.com
+        </h2>
+    </div>
+
+
+        <div class="rooms">
+        <form class="contactform">
+
+
+            <!--PERSONLIG BOX-->
+         
+            <fieldset> <!-- Skapar en box runt infon inanför fieldset -->
+                <legend>Contact us:</legend>
+                <br>
+                <div class="name">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" placeholder="Name" id="name" required> <!-- Gör det klickbart till rutan-->
+                </div>
+                <br>
+                
+                <div class="email">
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="email" placeholder="Email" id="email" required > 
+                </div>
+                <br>
+
+                <div class="phonenumber">
+                <label for="phone">Phonenumber:</label> <!-- Känns konstigt, skriv något annat här-->
+                <br>
+                <input type="tel" name="phone" id="phone" placeholder="+00-000-000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required> <!-- REQUIRED gör att man måste fylla in för att kunna skicka-->
+                </div>
+                <br>
+
+                <p>What do you need help with:</p>
+                <br>
+
+
+                <select name="customer-help" id="customer-help">
+                    <option value="" disabled selected >Choose alternative.. <!--TOM RUTA-->
+                    <option value="is-customer">Booking</option> <!-- Alternartivet-->
+                    <option value="is-customer">Change room</option> 
+                    <option value="is-customer">Cancel booking</option>  
+                </select>
+
+                <br><br>
+                <!--CIRCLE BOXES --> 
+                <label>Are you a member:</label>
+              
+                
+                <input type="radio" name="member" id="yes" value="yes">
+                <label for="yes">Yes</label>
+             
+                <input type="radio" name="member" id="no" value="no">
+                <label for="no">No</label>
+                <br>
+                <br>
+
+            </fieldset>
+
+            <!--MESSAGE BOX-->
+         
+            <br>
+            <div class="message-box">
+            <textarea id="message" cols="27" rows="10" placeholder="Message"></textarea>
+            </div>
+            <br>
+            <div class="button">
+                <h2 id="text" class="hide">Your Message Successfully Sent!</h2>
+                <button id="messagetext" type="submit" value="Submit">Submit</button>
+            
+            </div>
+   
+       
+        </form>
+
+    </div>
+
+        
+       <footer> <!--Botten på hemsidan-->
+            <br>
+            <a href="#">back to top</a>
+            <br>
+            <br>
+            <i>Copyright 2022 by Aries Academy</i>
+        </footer>
+   
+   
+    <!-- Denna ska finnas längst ned på sidan -->
+            <script src="app.js"></script>
+
+</body>
+</html>
