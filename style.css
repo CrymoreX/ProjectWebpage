@@ -331,18 +331,20 @@ form {
     display: none;
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    right: 20px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
+    background-color: #fff; /* Set a background color */
+    color: #8F5228; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    font-size: 13px; /* Increase font size */
+    text-transform: uppercase;
   }
   
   #myBtn:hover {
+    color: #fff;
     background-color: #555; /* Add a dark-grey background on hover */
   }
