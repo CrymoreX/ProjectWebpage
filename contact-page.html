@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> <!--Logo on left sida page-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <title>Contact</title>
@@ -34,8 +35,8 @@
             our main office:
             <br>
             Hulhudhoo, Addu City, Maldives   
-            <br>
-            <a class="link" href="https://www.google.com.my/maps/place/Maldiverna/@-0.5997859,73.218073,15.74z/data=!4m5!3m4!1s0x24b599bfaafb7bbd:0x414509e181956289!8m2!3d3.202778!4d73.22068">Google Link</a>
+            <br><br>
+            <a class="link" href="https://www.google.com.my/maps/place/Maldiverna/@-0.5997859,73.218073,15.74z/data=!4m5!3m4!1s0x24b599bfaafb7bbd:0x414509e181956289!8m2!3d3.202778!4d73.22068">Google Link Here</a>
             <br><br>
             Phone number:
             <br>
@@ -60,7 +61,7 @@
                 <div class="name">
                 <label for="name">Name:</label>
                 <br>
-                <input type="text" placeholder="Name" id="name" required> <!-- Gör det klickbart till rutan-->
+                <input type="text" name="name" placeholder="Name" id="name" required> <!-- Gör det klickbart till rutan-->
                 </div>
                 <br>
                 
@@ -74,14 +75,11 @@
                 <div class="phonenumber">
                 <label for="phone">Phonenumber:</label> <!-- Känns konstigt, skriv något annat här-->
                 <br>
-                <input type="tel" name="phone" id="phone" placeholder="+00-000-000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required> <!-- REQUIRED gör att man måste fylla in för att kunna skicka-->
+                <input type="tel" name="phone" id="phone" placeholder="Number" required> <!-- REQUIRED gör att man måste fylla in för att kunna skicka-->
                 </div>
                 <br>
-
-                <p>What do you need help with:</p>
-                <br>
-
-
+                <label>What do you need help with:</label>
+                <br><br>
                 <select name="customer-help" id="customer-help">
                     <option value="" disabled selected >Choose alternative.. <!--TOM RUTA-->
                     <option value="is-customer">Booking</option> <!-- Alternartivet-->
@@ -92,8 +90,6 @@
                 <br><br>
                 <!--CIRCLE BOXES --> 
                 <label>Are you a member:</label>
-              
-                
                 <input type="radio" name="member" id="yes" value="yes">
                 <label for="yes">Yes</label>
              
@@ -113,11 +109,10 @@
             <br>
             <div class="button">
                 <h2 id="text" class="hide">Your Message Successfully Sent!</h2>
-                <button id="messagetext" type="submit" value="Submit">Submit</button>
-            
+                <button id="messagetext" type="submit" value="Submit">Submit</button> 
             </div>
-   
-       
+
+
         </form>
 
     </div>

@@ -79,10 +79,10 @@ a{
 }
 
 p {
- font-size: 1em;
+ font-size: 15px;
  color: #8F5228;
  font-family: var(--font1);
- font-weight: 400;
+ 
 }
 
 h1 {
@@ -91,6 +91,7 @@ h1 {
     font-family: var(--font1);
     text-align: center;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 h2 {
@@ -98,8 +99,20 @@ h2 {
     font-family: var(--font1);
     text-align: center;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 12px;
     margin-top: 10px;
+}
+
+#price {
+    text-align: center;
+    font-size: 17px;
+    border: 3px solid #fff;
+    background-color: #8F5228;
+    border-radius: 20px;
+    color: #fff;
+    width: 70%;
+    margin-left: 15px;
+    padding: 10px;
 
 }
 
@@ -108,11 +121,7 @@ h2 {
     padding: 50px 100px 100px;
     text-align: center;
 }
-.text{
-    width: 100%;
-    padding-right: 150px;
-    align-items: center;
-}
+
 .text p{
     text-align: center;
     font-size: 20px;
@@ -126,11 +135,11 @@ h2 {
 .text a{
     position: relative;
     display: inline-block;
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 20px 30px;
     letter-spacing: 2px;
     font-weight: 500;
     margin-top: 60px;
@@ -170,11 +179,15 @@ label {
     color: #fff;
 }
 
-@media ( max-width: 1460px) {
+@media (min-width: 1360px) {
     section {
         padding: 0 12%;
         transition: 0.2s;
     }
+    .rooms {
+        max-width: 60%;
+    }
+
 }
 
 @media (max-width: 1195px) {
@@ -192,7 +205,7 @@ label {
         position: absolute;
         top: 100%;
         right: -100%;
-        width: 300px;
+        width: 420px;
         height: 40vh;
         background: #fff;
         display: flex;
@@ -202,8 +215,6 @@ label {
         transition: all .55s ease;
     }
 }
- 
-    
 
 .navlist.open {
     right: 0;
@@ -211,10 +222,8 @@ label {
 
 
 /* MOBILE */
-@media screen and (max-width: 680px) {
-    h2  {
-        font-size: 60%;
-    }
+@media screen and (max-width: 600px) {
+
 }
 
 
@@ -226,7 +235,7 @@ label {
     align-items: center;
     border: 3px solid #8F5228;
     border-radius: 10px;
-    width: 60%; /* makes box smaller*/
+    width: 80%; /* makes box smaller*/
     margin: 1rem auto 20px auto; /* center the box */
     display: flex;
 
@@ -250,7 +259,7 @@ video {
     background-color:#6AD4DB;
     display: flex;
     padding: 10px;
-    width: 60%;
+    width: 80%;
     margin: 1rem auto 20px auto; 
     flex-direction: column; 
     border: 3px solid #8F5228;
@@ -261,27 +270,35 @@ video {
 .rooms img{
     height: 250px;
     width: 250px;
-    max-width: 80%;
+    max-width: 85%;
     float: left;
     border: 3px solid #8F5228;
-    margin-left: 15px;
+    margin-left: 25px;
     border-radius: 10px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .rooms h3{
-    margin: 0;
-    color:#8F5228
-    
+    margin: 25px;
+    color:#8F5228  
 }
+
+.price {
+    border: #8F5228;
+    border-radius: 10px;
+}
+
+
+
 article{
    flex-direction: row;
    margin-bottom: 10px;
 }
 
-article p {
-    color: #fff;
+.rooms p {
+    color: #8F5228;
     margin-right: 15px;
+    margin-left: 25px;
     font-size: 1em;
     font-family: sans-serif;
     margin-top: 50px;    
@@ -289,12 +306,20 @@ article p {
 
 /* CONTACT-PAGE */
 
+legend{
+    font-size: 25px;
+}
 label {
     color: var(--brown);
+    font-size: 20px;
 }
 form {
  text-align: center;
  color: #8F5228;
+}
+
+.link {
+    color: #fff;
 }
 
 .message{
@@ -313,7 +338,7 @@ form {
 .button button {
     width: 30%;
     padding: 10px;
-    font-size: 12px;
+    font-size: 20px;
     color: #fff;
     background-color: #8F5228;
     text-align: center;
@@ -348,3 +373,4 @@ form {
     color: #fff;
     background-color: #555; /* Add a dark-grey background on hover */
   }
+
