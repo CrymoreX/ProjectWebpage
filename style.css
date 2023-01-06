@@ -64,7 +64,8 @@ header {
 
 body { 
   /*  background: url("images/maldives.jpg"); */
-    background-color: #36898F;
+    background: linear-gradient(245.59deg, #69C8DB 0%, #36808F 28.53%, #133A42 75.52%) ;
+    /*background-color: #36898F; */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -232,7 +233,6 @@ label {
 
 /* MOBILE */
 @media screen and (max-width: 600px) {
-
 }
 
 
