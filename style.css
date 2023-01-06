@@ -261,7 +261,7 @@ video {
 .rooms img{
     height: 250px;
     width: 250px;
-    max-width: 200px;
+    max-width: 80%;
     float: left;
     border: 3px solid #8F5228;
     margin-left: 15px;
